@@ -1,0 +1,19 @@
+#ifndef TYPE_DEFINITIONS_H
+#define TYPE_DEFINITIONS_H
+
+typedef enum States{
+	INITIAL,
+	LISTENING,
+	TRANSMITTING,
+	WAITING_RX_DONE
+}States;
+
+typedef enum Actions{
+	TX_DONE,
+	RX_DONE,
+	TX_DONE_TIMEOUT,
+	RX_DONE_TIMEOUT,
+	SEND_PACKAGE
+}Actions;
+
+#endif // TYPE_DEFINITIONS_H
