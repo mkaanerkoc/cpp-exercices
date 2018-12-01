@@ -16,8 +16,18 @@ public:
 	{
 
 	}
-	virtual int getCost() = 0;
-	virtual string getName() = 0;
+	virtual ~Coffee()
+	{
+
+	}
+	virtual int getCost()
+	{
+		return cost;
+	}
+	virtual string getName()
+	{
+		return name;
+	}
 protected:
 	int cost;
 	string name;
@@ -31,15 +41,6 @@ public:
 		cost = 20;
 		name = "Espresso";
 	}
-
-	int getCost() override
-	{
-		return cost;
-	}
-	string getName() override
-	{
-		return name;
-	}
 };
 
 class Mocha : public Coffee{
@@ -48,15 +49,6 @@ public:
 	{
 		cost = 30;
 		name = "Mocha";
-	}
-
-	int getCost() override
-	{
-		return cost;
-	}
-	string getName() override
-	{
-		return name;
 	}
 };
 
