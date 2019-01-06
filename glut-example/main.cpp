@@ -1,6 +1,6 @@
 #include <iostream>
 #include <GL/freeglut.h>
-#include <stdio.h>
+
 #include "Warship.h"
 #include "Container.h"
 
