@@ -1,5 +1,6 @@
 #include <iostream>
 #include <memory>
+#include "BinarySearchTree.h"
 
 using namespace std;
 
@@ -169,24 +170,6 @@ class BinarySearchTreeNode
 int main( void )
 {
 	cout<<"Hello world from binary search tree example "<<endl;
-	BinarySearchTreeNode root(10);
-	BinarySearchTreeNode node1(20);
-	BinarySearchTreeNode node2(6);
-	BinarySearchTreeNode node3(8);
-	BinarySearchTreeNode node4(18);
-	BinarySearchTreeNode node5(22);
-	BinarySearchTreeNode node6(23);
-	BinarySearchTreeNode node7(12);
-	BinarySearchTreeNode node8(15);
-	root.addNode( node1 );
-	root.addNode( node2 );
-	root.addNode( node3 );
-	root.addNode( node4 );
-	root.addNode( node5 );
-	root.addNode( node6 );
-	root.addNode( node7 );
-	root.addNode( node8 );
-	//root.printTree();
-	cout<<"Height of tree is : "<<root.getHeightOfTree()<<endl;
+	BinarySearchTree<int> tree;
 	return 0;
 }
